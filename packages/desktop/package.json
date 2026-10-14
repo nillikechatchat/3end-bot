@@ -1,0 +1,13 @@
+{
+  "name": "@3end/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Electron shell: starts the standalone server and shows the web client in a window.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^33.2.1"
+  }
+}

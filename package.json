@@ -1,0 +1,33 @@
+{
+  "name": "3end-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A standalone multi-bot team with three clients: desktop, web and mobile.",
+  "workspaces": [
+    "packages/core",
+    "packages/server",
+    "packages/web"
+  ],
+  "scripts": {
+    "start": "tsx packages/server/src/index.ts",
+    "dev": "node scripts/dev.mjs",
+    "dev:server": "tsx watch packages/server/src/index.ts",
+    "dev:web": "vite --config packages/web/vite.config.ts",
+    "build": "vite build --config packages/web/vite.config.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

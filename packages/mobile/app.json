@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "3end-bot",
+    "slug": "3end-bot",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": { "backgroundColor": "#0f1115" },
+    "assetBundlePatterns": ["**/*"]
+  }
+}
